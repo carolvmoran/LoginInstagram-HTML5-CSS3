@@ -32,43 +32,85 @@ body {
 .iphone {
     height: 40rem;
 }
-
+.instagramContinueConta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    min-height: 34rem;
+}
 .containerGroup {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 20rem;
-    border: 1px solid gray;
-    padding: 20px;
-    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    border: 1px solid lightgray;
+    padding: 1.3rem 0;
+    border-radius: 5px;
+    /* margin-bottom: 20px; */
+}
+
+.containerGroup:nth-child(1) {
+    min-height: 19rem;
 }
 
 .logoInstagram {
-    width: 80px;
+    width: 130px;
+    height: 3rem;
+}
+
+.containerFoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
 }
 .fotoPerfilInstagran {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.loginInstagran {
+    background-color: rgb(24, 156, 243);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.logoutInstagran {
+    color: rgb(24, 156, 243);
+    margin-top: 1rem;
+}
+
+.texto {
+    color: rgb(100, 100, 100);
+}
+.linkAzul {
+    color: rgb(24, 156, 243)
 }
 .store {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
 }
 .download {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
 }
 .appDownload {
-    width: 8rem;
-    height: 4rem;
-}
-.imgDownload {
-    width: 8rem;
-    height: 4rem;
+    width: 20rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/google-play-and-apple-app-store-logos-22.png);
 }
