@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+}
+
+.instagramContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instagramFotoCelular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.iphone {
+    height: 40rem;
+}
+
+.containerGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    border: 1px solid gray;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.logoInstagram {
+    width: 80px;
+}
+.fotoPerfilInstagran {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.download {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.appDownload {
+    width: 8rem;
+    height: 4rem;
+}
+.imgDownload {
+    width: 8rem;
+    height: 4rem;
+}
