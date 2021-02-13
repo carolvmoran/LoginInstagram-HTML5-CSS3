@@ -1,3 +1,4 @@
+/* Global ------------- */
 * {
     margin: 0;
     padding: 0;
@@ -22,6 +23,7 @@ body {
     height: 100vh;
 }
 
+/* Container esquerdo ------------- */
 .instagramFotoCelular {
     display: flex;
     align-items: center;
@@ -32,12 +34,14 @@ body {
 .iphone {
     height: 40rem;
 }
+
+/* Container direito ------------- */
 .instagramContinueConta {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 45%;
     min-height: 34rem;
 }
 .containerGroup {
@@ -50,14 +54,17 @@ body {
     border: 1px solid lightgray;
     padding: 1.3rem 0;
     border-radius: 5px;
-    /* margin-bottom: 20px; */
 }
 
 .containerGroup:nth-child(1) {
     min-height: 19rem;
 }
 
+/* Group 1 ------------- */
 .logoInstagram {
+    background-image: url(img/instagram-logo-4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 130px;
     height: 3rem;
 }
@@ -70,6 +77,9 @@ body {
     overflow: hidden;
 }
 .fotoPerfilInstagran {
+    background-image: url(img/fotoPerfil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100px;
     height: 100px;
 }
@@ -86,12 +96,15 @@ body {
     margin-top: 1rem;
 }
 
+/* Group 2 ------------- */
 .texto {
     color: rgb(100, 100, 100);
 }
 .linkAzul {
     color: rgb(24, 156, 243)
 }
+
+/* Group 3 ------------- */
 .store {
     display: flex;
     flex-direction: column;
@@ -113,4 +126,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(img/google-play-and-apple-app-store-logos-22.png);
+}
+
+/* Media Query ------------- */
+
+@media (max-width: 1024px) {
+    .instagramContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: white;
+    }
+    .instagramContainer {
+        width: 90%;
+    }
+    .instagramFotoCelular {
+        display: none;
+    }
+    .instagramContinueConta {
+        width: 100%;
+    }
 }
